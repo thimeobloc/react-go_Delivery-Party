@@ -1,0 +1,108 @@
+.home-container {
+  min-height: 100vh;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Bloc intro en haut, bien centré et lisible */
+.home-intro {
+  max-width: 650px;
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(30, 58, 138, 0.15);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 500;
+  user-select: none;
+}
+
+/* Horloge bien visible */
+.horloge-block {
+  max-width: 300px;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 14px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 600;
+  user-select: none;
+}
+
+/* Grille pour les blocs interactifs */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Blocs interactifs */
+.home-block {
+  border: 2px solid transparent;
+  border-radius: 14px;
+  padding: 18px 25px;
+  box-sizing: border-box;
+  cursor: default;
+  background-color: white;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.07);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease, border-color 0.3s ease;
+  user-select: none;
+}
+
+/* Hover et focus sur les blocs cliquables */
+.interactive-block {
+  cursor: pointer;
+  border-color: #1e40af;
+  color: #1e40af;
+}
+
+.interactive-block:hover,
+.interactive-block:focus-visible {
+  background-color: #e0e7ff;
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.25);
+  outline: none;
+}
+
+/* Titres */
+.home-block h2 {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* Paragraphes */
+.home-block p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Promotions */
+.promo-block {
+  background-color: #dbeafe;
+  border-color: #3b82f6;
+  color: #1e40af;
+}
+
+/* Avis clients */
+.reviews-block {
+  background-color: #eff6ff;
+  border-color: #2563eb;
+  color: #1e3a8a;
+  font-style: italic;
+}
+
+/* Contact */
+.contact-block {
+  background-color: #dbeafe;
+  border-color: #3b82f6;
+  color: #1e40af;
+}
